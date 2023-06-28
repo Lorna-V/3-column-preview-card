@@ -8,6 +8,10 @@
   
   <title>Frontend Mentor | 3-column preview card component</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap" rel="stylesheet">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     
@@ -15,6 +19,7 @@
 
     html {
       font-size: 15px;
+      font-family: 'Lexend Deca', sans-serif;
     }
 
     body {
@@ -22,11 +27,12 @@
     }
 
     .preview-card {
-
+      background-color: hsl(0, 0%, 95%);
     }
 
     .content-wrapper {
-
+      width: 80%;
+      padding: 36px;
     }
 
     img {
@@ -34,30 +40,46 @@
     }
 
     h1 {
-
+      font-family: 'Big Shoulders Display', cursive;
+      color: hsl(0, 0%, 95%);
+      text-transform: uppercase;
     }
 
     p {
-      font: hsla(0, 0%, 100%, 0.75);
+      color: hsla(0, 0%, 100%, 0.75);
       font-size: 1em;
     }
 
     .button {
-      
+      background-color: hsl(0, 0%, 95%);
+      border-radius: 30px;
+      padding: 15px;
+      text-align: center;
     }
 
     .sedans-container {
-
+      background-color: hsl(31, 77%, 52%);
     }
 
     .suvs-container {
-
+      background-color: hsl(184, 100%, 22%);
     }
 
     .luxury-container {
-
+      background-color: hsl(179, 100%, 13%);
     }
 
+    .sedans-container .button {
+      color: hsl(31, 77%, 52%);
+    }
+
+    .suvs-container .button {
+      color: hsl(184, 100%, 22%);
+    }
+
+    .luxury-container .button{
+      color: hsl(179, 100%, 13%);
+    }
 
 
     .attribution { font-size: 11px; text-align: center; }
